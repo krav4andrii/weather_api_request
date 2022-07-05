@@ -27,7 +27,7 @@ def weather(city_list,temp_units):
                 value_list.append(formated_dict)
                 print(value_list)
         headers=['Name','Id','Milliseconds','Current time','Temperature','Visibility','Pressure','Wind_speed']
-        readable_file = 'make/weather_data.csv'
+        readable_file = 'weather_data.csv'
         with open(readable_file, 'w') as f:
             write=csv.writer(f)
             write.writerow(headers)
